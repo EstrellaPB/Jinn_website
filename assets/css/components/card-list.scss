@@ -1,0 +1,68 @@
+$enable-rounded: false;
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+.card-stacked-container {
+    position: relative;
+    z-index: 999;
+    .carousel {
+        img {
+            min-height: 12rem!important;
+        }
+    }
+}
+.card-stacked-container::after {
+    content: "";
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -7px;
+    height: 18px;
+    border-radius: 8px;
+    border: 4px solid #608875;
+    background: #608875;
+    z-index: -1;
+}
+.card-text > span:nth-child(1) {
+    font-size: 15px;
+    line-height: 20px;
+    color: #959595;
+    font-family: "robotoregular";
+    font-weight: 400;
+}
+.card-text > span:nth-child(3) {
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    font-family: "blacker_displayregular";
+    font-weight: 800;
+}
+.card-text > span:nth-child(5) {
+    font-size: 23px;
+    line-height: 29px;
+    color: #000000;
+    font-family: "robotoregular";
+    font-weight: 700;
+}
+.card-stacked-container img {
+    border-radius: .25rem!important;
+}
+.card-stacked-01 {
+    background-color: #e78a6d;
+}
+.card-stacked-02 {
+    background-color: #608875;
+}
+
+@media only screen and (min-width: map-get($grid-breakpoints, md)) {
+    .card-stacked {
+        position: absolute;
+        bottom: 31%;
+        right: 30px;
+        left: 21px;
+        height: 68%;
+        z-index: -1;
+       
+    }
+}
+

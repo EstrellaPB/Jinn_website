@@ -1,0 +1,71 @@
+@import '~assets/css/theme-variables.scss';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+.card-property {
+    border-color: transparent;
+    .card-text {
+        font-family: 'robotoblack';
+        font-size: 0.7rem;
+        span {
+            margin: 0 10px;
+        }
+    }
+    .card-title {
+        font-family: 'blacker_displayheavy';
+    }
+}
+
+.card-property-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #959595;
+    font-family: "robotoregular";
+    font-weight: 400;
+    a {
+        color: #608875;
+    }
+}
+
+.price {
+    span:nth-child(1) {
+        font-size: 23px;
+        line-height: 29px;
+        color: #000000;
+        font-family: "robotoregular";
+        font-weight: 700;
+    }
+    span:nth-child(2) {
+        font-size: 15px;
+        line-height: 20px;
+        color: #959595;
+        font-family: "robotoregular";
+        font-weight: 400;
+    }
+}
+
+.calc-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #959595;
+    font-family: "robotoregular";
+    font-weight: 400;
+}
+.number-text {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "robotoregular";
+    font-weight: 700;
+}
+.overflow-scroll {
+    overflow-x: scroll;
+}
+.gallery-scroll {
+    width: 250%;
+}
+.img-gallery {
+    flex: 0 0 15%;
+    max-width: 15%!important;
+    margin: 10px 5px;
+}

@@ -1,0 +1,59 @@
+// For switch-button styling
+.switch-button-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .switch-button {
+      $switch-button-height: 1.6em;
+      $switch-button-color: var(--color);
+      $switch-button-border-thickness: 2px;
+      $switch-transition: all 0.3s ease-in-out;
+      $switch-is-rounded: true;
+  
+      height: $switch-button-height;
+      width: calc(#{$switch-button-height} * 2);
+      border: 1px solid #e1e1e1;
+      box-shadow: inset 0px 0px $switch-button-border-thickness 0px
+        rgba(0, 0, 0, 0.33);
+      border-radius: if($switch-is-rounded, $switch-button-height, 0);
+  
+      transition: $switch-transition;
+  
+      $button-side-length: calc(
+        #{$switch-button-height} + (1 * #{$switch-button-border-thickness})
+      );
+    
+      cursor: pointer;
+  
+      .button {
+        height: $button-side-length;
+        width: $button-side-length;
+        border: 1px solid #e1e1e1;
+        border-radius: if($switch-is-rounded, $button-side-length, 0);
+        background: white;
+  
+        transition: $switch-transition;
+        top: -3px;
+        position: relative;
+        right: 3px;
+      }
+  
+      &.enabled {
+        background-color: $switch-button-color;
+        box-shadow: none;
+  
+        .button {
+          background: white;
+          border: none;
+          transform: translateX(
+            calc(#{$button-side-length} + (1 *#{$switch-button-border-thickness}))
+          );
+        }
+      }
+    }
+  
+    .switch-button-label {
+      margin-left: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+.footerbar {
+    font-size: 10px;
+    line-height: 13px;
+    color: #ffffff;
+    font-family: "robotoregular";
+    font-weight: 300;
+    background: #000000;
+    padding: 20px 20px 10px 20px;
+}
+.nav.footerbar:nth-child(1)::after { 
+    content: "";
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: -4px;
+    height: 1px;
+    // border-radius: 2px;
+    border-bottom: 1px dotted white;
+}
+.nav.footerbar {
+    position: relative;
+}
+.footerbar a {
+    color: #ffffff;
+}

@@ -1,0 +1,41 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+.search {
+	border-radius: 10px;
+	box-shadow: 0.954px 4.908px 32px #252525;
+	background-color: #ffffff;;
+}
+.search .vue-daterange-picker {
+	width: 100%;
+}
+.search input, .search .reportrange-text {
+	border: none!important;
+	font-size: 17px;
+	color: #898989!important;
+	font-weight: 700!important;
+	padding: 0px;
+}
+.search label, .search legend, .search .col-form-label {
+	font-size: 26px!important;
+	line-height: 13px!important;
+	color: #000000!important;
+	font-family: "blacker_displaybold"!important;
+	font-weight: 800!important;
+}
+
+.search-button {
+	border-radius: 10px;
+	border-color: #808080;
+	box-shadow: 0.954px 4.908px 32px #252525!important;
+	background-color: #252525;
+	margin-top: 10px;
+}
+
+@media only screen and (min-width: map-get($grid-breakpoints, md)) {
+	.search, .search-button {
+		height: 87px;
+		width: auto!important;
+		margin-top: 0;
+	}
+}
